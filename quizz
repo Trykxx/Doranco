@@ -1,0 +1,89 @@
+score = 0
+
+echo "Bienvenue dans le quizz"
+echo "Premiere question : "
+echo "Qui est le prof ?"
+echo "1 - Toto"
+echo "2 - Imed"
+echo "3 - Said"
+echo "4 - Samy"
+echo "Veuillez taper votre réponse"
+read 
+if [ $REPLY -eq 2 ]
+then
+echo "Bonne réponse"
+((score++))
+else
+echo "Mauvaise réponse"
+fi
+
+
+echo "Deuxième question : "
+echo "Dans quelle salle sommes-nous ?" 
+echo "1 - Salle GA01"
+echo "2 - Salle GA02"
+echo "3 - Salle GA03"
+echo "4 - Salle GA04"
+echo "Veuillez taper votre réponse"
+read 
+if [ $REPLY -eq 4 ]
+then
+echo "Bonne réponse"
+((score++))
+else
+echo "Mauvaise réponse"
+fi
+
+echo "Troisième question : "
+echo "Dans quelle ville a lieu la formation ?" 
+echo "1 - Bagnolet"
+echo "2 - Montreuil"
+echo "3 - Bobigny"
+echo "4 - Saint-Denis"
+echo "Veuillez taper votre réponse"
+read 
+if [ $REPLY -eq 1 ]
+then
+echo "Bonne réponse"
+((score++))
+else
+echo "Mauvaise réponse"
+fi
+
+echo "Quatrième question : "
+echo "Qui est votre référent pédagogique ?" 
+echo "1 - Yanis"
+echo "2 - Nicolas"
+echo "3 - Yassine"
+echo "4 - Kenza"
+echo "Veuillez taper votre réponse"
+read 
+if [ $REPLY -eq 3 ]
+then
+echo "Bonne réponse"
+((score++))
+else
+echo "Mauvaise réponse"
+fi
+
+echo "Cinquième question : "
+echo " Combien d'élèves il y a-t-il dans la classe ?" 
+echo "1 - 15"
+echo "2 - 20"
+echo "3 - 30"
+echo "4 - 10"
+echo "Veuillez taper votre réponse"
+read 
+if [ $REPLY -eq 1 ]
+then
+echo "Bonne réponse"
+((score++))
+else
+echo "Mauvaise réponse"
+fi
+
+echo "Félicitions, vous avez eu" $score "points"
+
+
+
+

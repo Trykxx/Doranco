@@ -1,0 +1,4 @@
+# Ici j'initialise ma variable "i" en lui donnant la valeur 0
+i=0
+# Tant que la valueur de i est inférieur OU égale a 5, alors je reste dans ma boucle
+while [ $i -le ]
